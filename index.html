@@ -12,7 +12,7 @@
     <nav class="bg-green-200 p-4 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">GREENDEN</h1>
 
-<svg xmlns="http://www.w3.org/2000/svg"
+<svg id="menuicon" xmlns="http://www.w3.org/2000/svg"
      class="h-6 w-6 text-gray-800 cursor-pointer md:hidden"fill="none"viewBox="0 0 24 24"stroke="currentColor"stroke-width="2">
      <path stroke-linecap="round" stroke-linejoin="round"d="M4 6h16M4 12h16M4 18h16" />
 </svg>
@@ -30,6 +30,23 @@
         </ul>
     </nav> 
 
+    <!--sidebar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+         <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li class="hover:underline hover:text-black">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="hover:underline hover:text-black">
+                 <a href="product.html">Products</a>
+            </li>
+            <li class="hover:underline hover:text-black">
+                 <a href="contact.html">contact</a>
+            </li>
+        </ul>
+    </section>
 <!--Header section-->
 <section class="bg-green-200 p-4  md:p-10 flex justify-center">
     <div>
@@ -150,4 +167,5 @@
     <p>@2005 Greenday.com</p>
 </section>
 </body>
+<script src="index.js"></script>
 </html>
